@@ -54,43 +54,9 @@ print_r($biletsirasi);
 
 
     <?php 
-
-
-
-echo "<br><br><h4>1.Uygulama: 0 ile 100 arasında Tek mi Çift mi olduğunu bulan program<br></h4>";
-$random = rand(0,100);
-$tek= $random % 2;
-if ($tek !=0){
-
-    echo "sayınız tektir: " . $random;
-
-}else{
-        echo "sayınız çifttir: " . $random;
-}
     
-echo "<br><br><h4>2.Uygulama: 0 ile 100 arasında üretilen değerde Kaldığınızı veya Geçtiğinizi bulan program<br></h4>";
- $random = rand(0,100);
-
- if($random <=49){
-     echo "Kaldınız , Notunuz :" . $random;
- }else{
-     echo "Geçtiniz , Notunuz :" . $random;
- }
-
-    echo "<br><br><h4>3.Uygulama: 18 yaşından büyük olanların ehliyet alıp alamıcağını kontrol eden if programı<br></h4>";
     
-     $random = rand(1980,2022);
-       if($random <2004){
-           echo "Ehliyet Alabilirsiniz , Doğum Tarihiniz : " . $random;
-       }else{
-           echo "Ehliyet Alamazsınız , Doğum Tarihiniz : " . $random;
-       }
-      
-
-
-
-
-       echo "<br><br><h4>4.Uygulama: Öğrenci Detayları Dizisindeki Her Öğrencinin Detaylarını Alt Alta yazdırınız.<br></h4>";
+        echo "<br><br><h4>1.Uygulama: Öğrenci Detayları Dizisindeki Her Öğrencinin Detaylarını Alt Alta yazdırınız.<br></h4>";
       
        $ogrenciDetaylari = array(
         "ogrenci1" => array(
@@ -130,6 +96,35 @@ echo "<br><br><h4>2.Uygulama: 0 ile 100 arasında üretilen değerde Kaldığın
 
 
 
+echo "<br><br><h4>2.Uygulama: 0 ile 100 arasında Tek mi Çift mi olduğunu bulan program<br></h4>";
+$random = rand(0,100);
+$tek= $random % 2;
+if ($tek !=0){
+
+    echo "sayınız tektir: " . $random;
+
+}else{
+        echo "sayınız çifttir: " . $random;
+}
+    
+echo "<br><br><h4>3.Uygulama: 0 ile 100 arasında üretilen değerde Kaldığınızı veya Geçtiğinizi bulan program<br></h4>";
+ $random = rand(0,100);
+
+ if($random <=49){
+     echo "Kaldınız , Notunuz :" . $random;
+ }else{
+     echo "Geçtiniz , Notunuz :" . $random;
+ }
+
+    echo "<br><br><h4>4.Uygulama: 18 yaşından büyük olanların ehliyet alıp alamıcağını kontrol eden if programı<br></h4>";
+    
+     $random = rand(1980,2022);
+       if($random <2004){
+           echo "Ehliyet Alabilirsiniz , Doğum Tarihiniz : " . $random;
+       }else{
+           echo "Ehliyet Alamazsınız , Doğum Tarihiniz : " . $random;
+       }
+      
 
 
     ?>
